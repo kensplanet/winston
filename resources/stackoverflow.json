@@ -1,0 +1,32 @@
+{
+  "items": [
+    {
+      "badge_counts": {
+        "bronze": 7,
+        "silver": 0,
+        "gold": 0
+      },
+      "account_id": 6798776,
+      "is_employee": false,
+      "last_modified_date": 1463246352,
+      "last_access_date": 1467678691,
+      "reputation_change_year": 108,
+      "reputation_change_quarter": 0,
+      "reputation_change_month": 0,
+      "reputation_change_week": 0,
+      "reputation_change_day": 0,
+      "reputation": 354,
+      "creation_date": 1439748852,
+      "user_type": "registered",
+      "user_id": 5232935,
+      "location": "Toronto, Canada",
+      "website_url": "http://kensplanet.com",
+      "link": "http://stackoverflow.com/users/5232935/kensplanet",
+      "profile_image": "https://graph.facebook.com/10153664393484835/picture?type=large",
+      "display_name": "kensplanet"
+    }
+  ],
+  "has_more": false,
+  "quota_max": 10000,
+  "quota_remaining": 9989
+}

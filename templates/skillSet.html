@@ -1,0 +1,26 @@
+<div class="container">
+    <h1 id="skillSet">Skill Set</h1>
+
+    <hr class="style-five"/>
+
+    <div class="text-center">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 ">
+            <h2>Expert</h2>
+            <div ng-repeat="skills in topSkillsList"
+                 class="row skillset-bottom-padding">
+                <img ng-repeat="skill in skills"
+                     class="col-xs-4 col-sm-4 col-md-4 col-lg-4"
+                     src="images/logo/{{skill}}.png"/>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <h2>Intermediate</h2>
+            <div ng-repeat="skills in otherSkillsList"
+                 class="row skillset-bottom-padding">
+                <img ng-repeat="skill in skills"
+                     class="col-xs-4 col-sm-4 col-md-4 col-lg-4"
+                     src="images/logo/{{skill}}.png"/>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<!-- define angular app -->
+<html ng-app="app">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="This is the personal website of Kenneth John. Browse through the website for some amazing content.">
+    <meta name="author" content="Kenneth John (@kensplanet)">
+    <title>Kenneth John</title>
+
+    <!-- Stylesheets -->
+    <!-- build:css css/styles.css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"/>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.css"/>
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css"/>
+    <link rel="stylesheet" href="css/kensplanet.css">
+    <link rel="stylesheet" href="css/github-light.css">
+    <link rel="stylesheet" href="css/slate.css">
+    <!-- endbuild -->
+
+    <!-- Scripts -->
+    <!-- build:js js/scripts.js -->
+    <script type="text/javascript" src="bower_components/angular/angular.js"></script>
+    <script type="text/javascript" src="bower_components/angular-route/angular-route.js"></script>
+    <script type="text/javascript" src="bower_components/angular-translate/angular-translate.js"></script>
+    <script type="text/javascript" src="bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.js"></script>
+
+    <script src="js/modules.js"></script>
+    <script src="js/config.js"></script>
+
+    <script src="js/controllers/angularjs-shopping-cart-controller.js"></script>
+    <script src="js/controllers/skillSet-controller.js"></script>
+    <script src="js/controllers/connect-controller.js"></script>
+
+    <script src="js/directives/header-directive.js"></script>
+    <script src="js/directives/body-directive.js"></script>
+    <script src="js/directives/footer-directive.js"></script>
+    <!-- endbuild -->
+</head>
+
+<body>
+    <div class="header" header></div>
+    <!-- angular templating -->
+    <!-- this is where content will be injected -->
+    <div class="body" ng-view></div>
+    <div class="footer" footer></div>
+
+</body>
+</html>

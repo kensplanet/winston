@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+- '0.12'
+before_install:
+
+- chmod 600 ~/.ssh/id_rsa
+- npm install -g grunt-cli
+- npm install -g bower
+install:
+  - npm install
+  - bower install
+before_script:
+  - grunt
+after_script: scp -r -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -o PubkeyAuthentication=yes -o PasswordAuthentication=no dist/* kensplanet@107.180.50.184:/home/kensplanet/public_html
