@@ -4,7 +4,8 @@ angular.module('app')
 
         // route for the home page
             .when('/', {
-                redirectTo: '/skillSet'
+                templateUrl: 'templates/home.html',
+                controller: 'homeController'
             })
             .when('/skillSet', {
                 templateUrl: 'templates/skillSet.html',
